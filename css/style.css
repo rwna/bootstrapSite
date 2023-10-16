@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --yellow-color: rgb(173, 104, 35);
+    --pink-color:rgb(20, 165, 153);
+    --yellow-color :rgb(230, 183, 29);
+    --dark-color:rgb(7, 27, 92);
+    --pink-color:#d8749a;
+}
+
+.navbar{
+  /* background-color: rgba(243, 247, 247, .6); */
+}
+.navbar img, .info img{
+    height: 60px;
+    width: 100px;
+    
+}
+.navbar .navbar-brand{
+    color: var(--yellow-color);
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--yellow-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--dark-color)
+
+}
+.dropdown-menu {
+    
+    background-color: rgba(253, 253, 253, 0.3);
+    
+}
+.search{
+    border-left: 1px solid var(--dark-color);
+}
+
+.bot .btn{
+    background-color: var(--dark-color);
+    color: var(--yellow-color)
+}
+.bot .btn:hover{
+    /* opacity: .7; */
+    color: var(--yellow-color);
+}
+.search i{
+    color:var(--dark-color)
+
+}
+.navbar .navbar-toggler{
+    color:var(--dark-color);
+    font-size: 24px;
+    border-color:var(--dark-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.modal-header{
+    background-color: var(--pink-color);
+    color:rgb(255, 255, 255)
+}
+.modal-footer  button {
+    background-color: var(--pink-color);
+    color:rgb(255, 255, 255)
+}
+.check{
+    background-color: var(--pink-color);
+
+
+}
+.modal-body{
+    color: var(--yellow-color);
+}
+/* ///////////////////sec two.//////////////////// */
+.carousel-inner .carousel-caption{
+    background-color: rgba(241, 246, 250, .5);
+    color: var(--dark-color);
+}
+.learn{
+    background-color: rgba(241, 246, 250, .5);
+    background-color: rgba(220, 212, 228, 0.4);
+
+}
+.learn h1{
+
+
+
+background: linear-gradient(
+    to right, #f32170, #041158,
+     #cf23cf, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+.bot2 .btn{
+    font-size: 18px;
+color: #faf8f9;
+padding: 10px;
+width: 100px;
+border-radius: 10px;
+color: var(--dark-color);
+/* background-image: linear-gradient(to right, #f32170 0%,#cf23cf 50%,#041158 100%) */
+background-image: linear-gradient(to right,#f6d365 0%, #df48ac 51%, #f6d365 100%);
+
+}
+.des{
+    background-color: #f32170;
+    background-color:var(--dark-color);
+   
+    
+   
+}
+.des h1{
+    /* color: var(--yellow-color); */
+}
+.list button{
+ 
+    border: 1px solid rgba(220, 212, 228, 0.4);
+    color: #031463;
+    background-color: rgba(220, 212, 228, 0.4);
+
+
+}
+.list button .active,
+.list button:focus,
+.list button:hover{
+    background-color: #d8749a;
+    border: 1px solid #d8749a;
+}
+.modal-dialog .modal2{
+    background-color: rgb(254, 255, 255);
+}
+.translate{
+    background-color: var(--dark-color);
+    background-color: rgba(220, 212, 228, 0.4);
+ 
+}
+.translate h5, label ,.main-title ,.podcast h3{
+  
+    background: linear-gradient(
+    to right, #f32170, #041158,
+     #cf23cf, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+.des2{
+    background-color: var(--dark-color);
+}
+.tras-btn button , .contact-btn{
+ 
+ color: var(--dark-color);
+/* background-image: linear-gradient(to right, #f32170 0%,#cf23cf 50%,#041158 100%) */
+background-image: linear-gradient(to right,#f6d365 0%, #df48ac 51%, #f6d365 100%);
+
+}
+/* /////////////////////////////////////sec four//////////////////////// */
+.background{
+    background-image: url(../image/wallpaper1.jpg);
+    background-color: #df48ac;
+    height: 50vh;
+    background-attachment: fixed;
+}
+.famous .card{
+        overflow: hidden;
+        position: relative;
+}
+.famous .card::after{
+    content: attr(description);
+    position: absolute;
+      font-size: 17px;
+      padding: 5px;
+      color: rgb(248, 248, 248);
+    /* background-color: rgba(25, 26, 26, 0.2); */
+    transition: 0.7s;
+   /* visibility: hidden; */
+   transform: translateX(calc(100%  + 7px));
+    width: 100%;
+    height: 100%;
+}
+.famous .card:hover::after{
+    background-color: rgba(0, 0, 0, 0.6);
+/* visibility: visible; */
+transform: translateX(0);
+}
+
+.wallpaper{
+    background-image: url(../image/slide2.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+}
+.card-img-overlay{
+    background-color: rgba(10, 10, 10, 0.6);
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    
+}
+.card-img-overlay img{
+    border-radius: 70%;
+    height: 80px;
+    box-shadow: 3px 3px 9px #287ff0;
+    /* box-shadow: rgb(87, 162, 243) 0px 20px 30px -10px; */
+    border: 1px solid #287ff0 ;
+    /* margin-top: 40px; */
+    position: absolute;
+}
+.date{
+    font-size: 13px;
+}
+.card-img-overlay i{
+    font-size: 12px;
+}
+.card-employee:hover{
+    transform: scale(.8 ,.9);
+}
+.card-employee:hover .card-img-overlay{
+    background-color: rgba(5, 37, 112, 0.6);
+}
+.card-employee{
+    transition: .6s;
+}
+.podcast{
+    background-color: rgba(220, 212, 228, 0.4);
+
+}
+.podcast h3{
+    display: block;
+}
+.podcast i{
+color: #f32170;
+height: inherit;
+
+}
+
+.podcast img{
+    /* margin-left: auto; */
+    line-height: inherit;
+    height: 400px;
+    
+}
+.podcast p{
+    position: relative;
+}
+.podcast p::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+     background-color: #f6d365;
+     /* margin: 10px 0px 10px 0px; */
+}
+
+.podcast .botm{
+    background-color: #f6d365;
+    padding: 5px 3px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .1s;
+}
+/* ////////////////footer/////////////// */
+.footer{
+    color: #041c86;
+    background-color: rgba(155, 155, 161, 0.2);
+    background-color: rgba(220, 212, 228, 0.4);
+
+}
+
+.info .sp1{
+color:#f32170;
+}
+.info .sp2
+{
+    color: #287ff0;
+}
+.links h5, .contact h5{
+    color: var(--yellow-color);
+}
+.contact ul li a i{
+    font-size: 30px;
+    
+}
+.contact ul li a  .facebook{
+    color:rgb(32, 17, 85)
+}
+.insta{
+   color: rgb(202, 69, 180);
+}
+.linkedin{
+    color: rgb(240, 46, 62);
+}
+.whatsapp{
+    color: rgb(13, 153, 106);
+}
